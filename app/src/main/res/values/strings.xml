@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewsInPocket</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news_in_your_pocket">News In Your Pocket</string>
+    <string name="subtitle_two">…and more</string>
+    <string name="subtitle_one">Everything you wanted to know</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec quam non sem egestas bibendum. Morbi placerat nec tellus a pharetra</string>
+    <string name="saved_news">Saved News</string>
+    <string name="search">Search</string>
+</resources>
