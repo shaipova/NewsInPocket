@@ -9,6 +9,7 @@ import android.widget.AbsListView
 import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsinpocket.R
@@ -79,6 +80,16 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
                 }
             }
         })
+
+
+        newsAdapter.setOnItemClickListener {
+            val bundle = Bundle().apply {
+                putSerializable("article", it)
+            }
+            findNavController().navigate(
+                R.id.action_searchFragment_to_articleFragment, bundle
+            )
+        }
     }
 
     private fun showProgressBar() {

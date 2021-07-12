@@ -41,11 +41,9 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
 
         val application = requireNotNull(this.activity).application
 
-
         val newsRepository = NewsRepository(NewsDatabase(application))
         val viewModelProviderFactory = ViewModelProviderFactory(newsRepository)
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(ViewModel::class.java)
-
 
 
         val newsAdapter = NewsAdapter()
@@ -74,7 +72,6 @@ class NewsFragment : Fragment(R.layout.fragment_news) {
                 }
             }
         })
-
 
 
         newsAdapter.setOnItemClickListener {

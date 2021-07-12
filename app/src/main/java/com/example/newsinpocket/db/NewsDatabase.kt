@@ -31,6 +31,5 @@ abstract class NewsDatabase : RoomDatabase(){
                 NewsDatabase::class.java,
                 "article_db.db"
             ).build()
-
     }
 }
